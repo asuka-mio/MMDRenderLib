@@ -2,7 +2,7 @@ package moe.tarsin.mmdrenderlib.model;
 
 import moe.tarsin.mmdrenderlib.MMDRenderLib;
 import moe.tarsin.mmdrenderlib.NativeLibraryProvider;
-import org.lwjgl.opengl.*;
+import org.lwjgl.opengl.GL46C;
 
 import java.nio.ByteBuffer;
 

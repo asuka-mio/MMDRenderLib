@@ -1,6 +1,7 @@
 package moe.tarsin.mmdrenderlib.api;
 
 import moe.tarsin.mmdrenderlib.MMDRenderLib;
+import moe.tarsin.mmdrenderlib.animation.MMDAnimManager;
 import moe.tarsin.mmdrenderlib.model.MMDModel;
 
 import java.io.File;
@@ -19,6 +20,12 @@ public final class ModelLoader {
             MMDRenderLib.logger.error(modelFile.getAbsolutePath()+"can't be loaded!");
             throw new Exception("Unsupport MMD File");
         }
-        return new MMDModel(modelFile.getAbsolutePath(),modelDir.getAbsolutePath(),isPMD,layerCount);
+        MMDModel model = new MMDModel(modelFile.getAbsolutePath(),modelDir.getAbsolutePath(),isPMD,layerCount);
+        MMDAnimManager.AddModel(model);
+        return model;
+    }
+    public static void DeleteModel(MMDModel model){
+        MMDAnimManager.DeleteAllAnimOfModel(model);
+        MMDModel.Delete(model);
     }
 }
