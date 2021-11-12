@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MMDAnimManager {
+public final class MMDAnimManager {
     static Map<File, Long> animStatic;
     static Map<MMDModel, Map<File, Long>> animModel;
 
@@ -28,7 +28,6 @@ public class MMDAnimManager {
         animModel.remove(model);
     }
 
-    //For other entity (Multiple model)
     public static long GetAnimModel(MMDModel model, File animFile) {
         Map<File, Long> sub = animModel.get(model);
         Long result = sub.get(animFile);
