@@ -14,7 +14,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "moe.tarsin.mmdrenderlib.fabric.ExampleModFabric"
+      "moe.tarsin.mmdrenderlib.fabric.MMDRenderLibFabric"
     ]
   },
   "depends": {

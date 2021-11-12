@@ -5,7 +5,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.nio.file.Path;
 
-public class ExampleExpectPlatformImpl {
+public class MMDRenderLibExpectPlatformImpl {
     /**
      * This is our actual method to {@link MMDRenderLibPlatform#getConfigDirectory()}.
      */

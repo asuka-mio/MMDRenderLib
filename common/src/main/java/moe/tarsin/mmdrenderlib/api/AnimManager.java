@@ -5,7 +5,7 @@ import moe.tarsin.mmdrenderlib.model.MMDModel;
 
 import java.io.File;
 
-public class AnimManager {
+public final class AnimManager {
     public static void setModelWithAnim(MMDModel model, File animFile,int layer){
         long anim = MMDAnimManager.GetAnimModel(model,animFile);
         model.ChangeAnim(anim,layer);
