@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[37,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "mmdrenderlib"
+version = "${version}"
+displayName = "MMD Render Library"
+authors = "kjkjkAIStudio,tarsin"
+description = '''
+MMD Render Library
+'''
+#logoFile = ""
+
+[[dependencies.mmdrenderlib]]
+modId = "forge"
+mandatory = true
+versionRange = "[37,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mmdrenderlib]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.17.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mmdrenderlib]]
+modId = "architectury"
+mandatory = true
+versionRange = "[2.3.23,)"
+ordering = "AFTER"
+side = "BOTH"
